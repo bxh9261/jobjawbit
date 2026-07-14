@@ -1,43 +1,128 @@
-# Video Word Remixer Prototype
+# JobJawbit
 
-Upload a short video, transcribe it into word-level clips, drag words into a new sentence, preview individual words, and export the result as an MP4.
+JobJawbit is a local Python tool for creating "word remix" videos. Given a source video, it transcribes the speech, records the timestamp of every spoken word, and allows those words to be stitched together into entirely new sentences.
+
+The goal is not to make the edits seamless. Instead, the output intentionally sounds spliced together, as though someone is constructing new dialogue entirely from existing clips.
 
 ## Requirements
 
-- Python 3.10+
-- FFmpeg installed and available on PATH
-- Several GB of free disk space for the transcription model
+- Python 3.11 or newer
+- FFmpeg installed and available on your system PATH
 
-## Windows setup
+To verify FFmpeg is installed:
 
-1. Install FFmpeg:
+```bash
+ffmpeg -version
+```
 
-   winget install Gyan.FFmpeg
+## Installation
 
-2. Open a new PowerShell window and confirm:
+Clone the repository:
 
-   ffmpeg -version
+```bash
+git clone https://github.com/YOUR_USERNAME/JobJawbit.git
+cd JobJawbit
+```
 
-3. Create and activate a virtual environment:
+Create a virtual environment.
 
-   py -m venv .venv
-   .\.venv\Scripts\Activate.ps1
+### Windows
 
-4. Install dependencies:
+```powershell
+py -m venv .venv
+.\.venv\Scripts\activate
+```
 
-   pip install -r requirements.txt
+If PowerShell blocks script execution:
 
-5. Start the app:
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 
-   uvicorn main:app --reload
+Alternatively, activate the environment using Command Prompt:
 
-6. Open:
+```cmd
+.venv\Scripts\activate.bat
+```
 
-   http://127.0.0.1:8000
+### macOS / Linux
 
-## Notes
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
 
-- The first transcription downloads the selected faster-whisper model.
-- The default model is `small`, running on CPU with int8 computation.
-- Short words may include neighboring sounds. This is expected and supports the intentionally spliced style.
-- Uploaded and generated files are stored under `projects/`.
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running
+
+Place the video you want to process into the `input` directory.
+
+Run:
+
+```bash
+python main.py
+```
+
+The program will:
+
+1. Transcribe the video.
+2. Record timestamps for every spoken word.
+3. Search for the requested words or phrases.
+4. Extract the corresponding clips.
+5. Concatenate them into a new video.
+
+The first run on a video will take the longest because transcription must be performed. After that, the generated transcript can be reused without processing the video again.
+
+## Project Structure
+
+```
+JobJawbit/
+├── input/
+├── output/
+├── main.py
+├── requirements.txt
+└── README.md
+```
+
+## Troubleshooting
+
+### FFmpeg is not recognized
+
+Verify that FFmpeg is installed and on your system PATH.
+
+```bash
+ffmpeg -version
+```
+
+### Missing Python packages
+
+Upgrade pip:
+
+```bash
+python -m pip install --upgrade pip
+```
+
+Then reinstall the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Future Work
+
+Current development is focused on improving clip quality and usability, including:
+
+- Better phrase matching
+- Improved handling of punctuation and pauses
+- Faster searching on previously transcribed videos
+- Batch processing of multiple requested phrases
+- A graphical interface
+
+## License
+
+This project is intended for personal, educational, and research use.
