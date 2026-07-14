@@ -1,0 +1,1352 @@
+{
+  "project_id": "a36bd18bfaae4278a97189afd977aa80",
+  "source_filename": "source.mp4",
+  "language": "en",
+  "language_probability": 0.9950472116470337,
+  "words": [
+    {
+      "id": "word-0",
+      "text": "Hello",
+      "start": 0.43,
+      "end": 1.13,
+      "confidence": 0.713
+    },
+    {
+      "id": "word-1",
+      "text": "people",
+      "start": 1.13,
+      "end": 2.19,
+      "confidence": 0.273
+    },
+    {
+      "id": "word-2",
+      "text": "on",
+      "start": 2.19,
+      "end": 2.81,
+      "confidence": 0.987
+    },
+    {
+      "id": "word-3",
+      "text": "YouTube",
+      "start": 2.81,
+      "end": 3.07,
+      "confidence": 0.817
+    },
+    {
+      "id": "word-4",
+      "text": "Shorts.",
+      "start": 3.07,
+      "end": 3.53,
+      "confidence": 0.599
+    },
+    {
+      "id": "word-5",
+      "text": "I",
+      "start": 4.23,
+      "end": 4.67,
+      "confidence": 0.987
+    },
+    {
+      "id": "word-6",
+      "text": "have",
+      "start": 4.67,
+      "end": 4.75,
+      "confidence": 0.982
+    },
+    {
+      "id": "word-7",
+      "text": "a",
+      "start": 4.75,
+      "end": 4.83,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-8",
+      "text": "question",
+      "start": 4.83,
+      "end": 5.11,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-9",
+      "text": "for",
+      "start": 5.11,
+      "end": 5.39,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-10",
+      "text": "you.",
+      "start": 5.39,
+      "end": 5.59,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-11",
+      "text": "Are",
+      "start": 5.71,
+      "end": 5.83,
+      "confidence": 0.979
+    },
+    {
+      "id": "word-12",
+      "text": "you",
+      "start": 5.83,
+      "end": 5.97,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-13",
+      "text": "on",
+      "start": 5.97,
+      "end": 6.15,
+      "confidence": 0.992
+    },
+    {
+      "id": "word-14",
+      "text": "YouTube",
+      "start": 6.15,
+      "end": 6.37,
+      "confidence": 0.965
+    },
+    {
+      "id": "word-15",
+      "text": "Shorts",
+      "start": 6.37,
+      "end": 6.73,
+      "confidence": 0.944
+    },
+    {
+      "id": "word-16",
+      "text": "right",
+      "start": 6.73,
+      "end": 6.97,
+      "confidence": 0.99
+    },
+    {
+      "id": "word-17",
+      "text": "now",
+      "start": 6.97,
+      "end": 7.15,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-18",
+      "text": "because",
+      "start": 7.15,
+      "end": 7.41,
+      "confidence": 0.938
+    },
+    {
+      "id": "word-19",
+      "text": "you",
+      "start": 7.41,
+      "end": 7.61,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-20",
+      "text": "want",
+      "start": 7.61,
+      "end": 7.91,
+      "confidence": 0.972
+    },
+    {
+      "id": "word-21",
+      "text": "to",
+      "start": 7.91,
+      "end": 8.15,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-22",
+      "text": "be,",
+      "start": 8.15,
+      "end": 8.31,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-23",
+      "text": "or",
+      "start": 8.77,
+      "end": 8.91,
+      "confidence": 0.988
+    },
+    {
+      "id": "word-24",
+      "text": "because",
+      "start": 8.91,
+      "end": 9.37,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-25",
+      "text": "you're",
+      "start": 9.37,
+      "end": 10.53,
+      "confidence": 0.916
+    },
+    {
+      "id": "word-26",
+      "text": "trying",
+      "start": 10.53,
+      "end": 10.91,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-27",
+      "text": "to",
+      "start": 10.91,
+      "end": 11.19,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-28",
+      "text": "avoid",
+      "start": 11.19,
+      "end": 11.65,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-29",
+      "text": "some",
+      "start": 11.65,
+      "end": 11.95,
+      "confidence": 0.987
+    },
+    {
+      "id": "word-30",
+      "text": "level",
+      "start": 11.95,
+      "end": 12.25,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-31",
+      "text": "of",
+      "start": 12.25,
+      "end": 12.43,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-32",
+      "text": "anxiety",
+      "start": 12.43,
+      "end": 12.81,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-33",
+      "text": "and",
+      "start": 12.81,
+      "end": 13.57,
+      "confidence": 0.651
+    },
+    {
+      "id": "word-34",
+      "text": "your",
+      "start": 13.57,
+      "end": 14.05,
+      "confidence": 0.841
+    },
+    {
+      "id": "word-35",
+      "text": "phone",
+      "start": 14.05,
+      "end": 14.27,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-36",
+      "text": "just",
+      "start": 14.27,
+      "end": 14.47,
+      "confidence": 0.995
+    },
+    {
+      "id": "word-37",
+      "text": "kind",
+      "start": 14.47,
+      "end": 14.65,
+      "confidence": 0.921
+    },
+    {
+      "id": "word-38",
+      "text": "of",
+      "start": 14.65,
+      "end": 14.77,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-39",
+      "text": "took",
+      "start": 14.77,
+      "end": 14.91,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-40",
+      "text": "you",
+      "start": 14.91,
+      "end": 15.13,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-41",
+      "text": "here",
+      "start": 15.13,
+      "end": 15.37,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-42",
+      "text": "because",
+      "start": 15.37,
+      "end": 15.63,
+      "confidence": 0.948
+    },
+    {
+      "id": "word-43",
+      "text": "it's",
+      "start": 15.63,
+      "end": 15.89,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-44",
+      "text": "the",
+      "start": 15.89,
+      "end": 16.03,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-45",
+      "text": "easiest",
+      "start": 16.03,
+      "end": 16.31,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-46",
+      "text": "way",
+      "start": 16.31,
+      "end": 16.65,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-47",
+      "text": "to",
+      "start": 16.65,
+      "end": 16.79,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-48",
+      "text": "get",
+      "start": 16.79,
+      "end": 17.13,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-49",
+      "text": "quick",
+      "start": 17.13,
+      "end": 17.37,
+      "confidence": 0.975
+    },
+    {
+      "id": "word-50",
+      "text": "dopamine",
+      "start": 17.37,
+      "end": 17.79,
+      "confidence": 0.988
+    },
+    {
+      "id": "word-51",
+      "text": "hits?",
+      "start": 17.79,
+      "end": 18.17,
+      "confidence": 0.954
+    },
+    {
+      "id": "word-52",
+      "text": "If",
+      "start": 18.71,
+      "end": 18.89,
+      "confidence": 0.969
+    },
+    {
+      "id": "word-53",
+      "text": "it's",
+      "start": 18.89,
+      "end": 19.05,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-54",
+      "text": "the",
+      "start": 19.05,
+      "end": 19.17,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-55",
+      "text": "first",
+      "start": 19.17,
+      "end": 19.35,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-56",
+      "text": "one,",
+      "start": 19.35,
+      "end": 19.59,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-57",
+      "text": "that's",
+      "start": 19.61,
+      "end": 19.83,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-58",
+      "text": "totally",
+      "start": 19.83,
+      "end": 20.01,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-59",
+      "text": "fine.",
+      "start": 20.01,
+      "end": 20.31,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-60",
+      "text": "If",
+      "start": 20.41,
+      "end": 20.49,
+      "confidence": 0.99
+    },
+    {
+      "id": "word-61",
+      "text": "you",
+      "start": 20.49,
+      "end": 20.59,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-62",
+      "text": "like",
+      "start": 20.59,
+      "end": 20.77,
+      "confidence": 0.991
+    },
+    {
+      "id": "word-63",
+      "text": "being",
+      "start": 20.77,
+      "end": 20.97,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-64",
+      "text": "on",
+      "start": 20.97,
+      "end": 21.11,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-65",
+      "text": "YouTube",
+      "start": 21.11,
+      "end": 21.31,
+      "confidence": 0.982
+    },
+    {
+      "id": "word-66",
+      "text": "Shorts,",
+      "start": 21.31,
+      "end": 21.63,
+      "confidence": 0.995
+    },
+    {
+      "id": "word-67",
+      "text": "that's",
+      "start": 21.73,
+      "end": 21.93,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-68",
+      "text": "great.",
+      "start": 21.93,
+      "end": 22.13,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-69",
+      "text": "But",
+      "start": 22.21,
+      "end": 22.33,
+      "confidence": 0.987
+    },
+    {
+      "id": "word-70",
+      "text": "I",
+      "start": 22.33,
+      "end": 22.47,
+      "confidence": 0.98
+    },
+    {
+      "id": "word-71",
+      "text": "know",
+      "start": 22.47,
+      "end": 22.61,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-72",
+      "text": "there",
+      "start": 22.61,
+      "end": 22.75,
+      "confidence": 0.995
+    },
+    {
+      "id": "word-73",
+      "text": "were",
+      "start": 22.75,
+      "end": 22.89,
+      "confidence": 0.959
+    },
+    {
+      "id": "word-74",
+      "text": "a",
+      "start": 22.89,
+      "end": 22.97,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-75",
+      "text": "lot",
+      "start": 22.97,
+      "end": 23.07,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-76",
+      "text": "of",
+      "start": 23.07,
+      "end": 23.15,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-77",
+      "text": "people",
+      "start": 23.15,
+      "end": 23.35,
+      "confidence": 1.0
+    },
+    {
+      "id": "word-78",
+      "text": "that",
+      "start": 23.35,
+      "end": 23.57,
+      "confidence": 0.86
+    },
+    {
+      "id": "word-79",
+      "text": "like",
+      "start": 23.57,
+      "end": 24.03,
+      "confidence": 0.54
+    },
+    {
+      "id": "word-80",
+      "text": "me",
+      "start": 24.03,
+      "end": 24.31,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-81",
+      "text": "that",
+      "start": 24.31,
+      "end": 24.91,
+      "confidence": 0.932
+    },
+    {
+      "id": "word-82",
+      "text": "didn't",
+      "start": 24.91,
+      "end": 26.11,
+      "confidence": 0.939
+    },
+    {
+      "id": "word-83",
+      "text": "really",
+      "start": 26.11,
+      "end": 26.29,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-84",
+      "text": "want",
+      "start": 26.29,
+      "end": 26.57,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-85",
+      "text": "to",
+      "start": 26.57,
+      "end": 26.79,
+      "confidence": 1.0
+    },
+    {
+      "id": "word-86",
+      "text": "be",
+      "start": 26.79,
+      "end": 26.89,
+      "confidence": 1.0
+    },
+    {
+      "id": "word-87",
+      "text": "here,",
+      "start": 26.89,
+      "end": 27.07,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-88",
+      "text": "just",
+      "start": 27.13,
+      "end": 27.27,
+      "confidence": 0.983
+    },
+    {
+      "id": "word-89",
+      "text": "found",
+      "start": 27.27,
+      "end": 27.55,
+      "confidence": 0.854
+    },
+    {
+      "id": "word-90",
+      "text": "themselves",
+      "start": 27.55,
+      "end": 27.87,
+      "confidence": 0.935
+    },
+    {
+      "id": "word-91",
+      "text": "always",
+      "start": 27.87,
+      "end": 28.19,
+      "confidence": 0.99
+    },
+    {
+      "id": "word-92",
+      "text": "drifting",
+      "start": 28.19,
+      "end": 28.49,
+      "confidence": 0.972
+    },
+    {
+      "id": "word-93",
+      "text": "here.",
+      "start": 28.49,
+      "end": 28.87,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-94",
+      "text": "So",
+      "start": 28.87,
+      "end": 29.53,
+      "confidence": 0.317
+    },
+    {
+      "id": "word-95",
+      "text": "I,",
+      "start": 29.53,
+      "end": 30.11,
+      "confidence": 0.792
+    },
+    {
+      "id": "word-96",
+      "text": "over",
+      "start": 30.35,
+      "end": 30.79,
+      "confidence": 0.639
+    },
+    {
+      "id": "word-97",
+      "text": "the",
+      "start": 30.79,
+      "end": 30.91,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-98",
+      "text": "past",
+      "start": 30.91,
+      "end": 31.11,
+      "confidence": 0.973
+    },
+    {
+      "id": "word-99",
+      "text": "couple",
+      "start": 31.11,
+      "end": 31.33,
+      "confidence": 0.99
+    },
+    {
+      "id": "word-100",
+      "text": "years,",
+      "start": 31.33,
+      "end": 31.59,
+      "confidence": 0.685
+    },
+    {
+      "id": "word-101",
+      "text": "have",
+      "start": 31.71,
+      "end": 31.83,
+      "confidence": 0.97
+    },
+    {
+      "id": "word-102",
+      "text": "been",
+      "start": 31.83,
+      "end": 31.95,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-103",
+      "text": "doing",
+      "start": 31.95,
+      "end": 32.07,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-104",
+      "text": "a",
+      "start": 32.07,
+      "end": 32.21,
+      "confidence": 0.988
+    },
+    {
+      "id": "word-105",
+      "text": "lot",
+      "start": 32.21,
+      "end": 32.29,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-106",
+      "text": "of",
+      "start": 32.29,
+      "end": 32.39,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-107",
+      "text": "research",
+      "start": 32.39,
+      "end": 32.73,
+      "confidence": 0.954
+    },
+    {
+      "id": "word-108",
+      "text": "into",
+      "start": 32.73,
+      "end": 33.31,
+      "confidence": 0.981
+    },
+    {
+      "id": "word-109",
+      "text": "smartphone",
+      "start": 33.31,
+      "end": 33.87,
+      "confidence": 0.885
+    },
+    {
+      "id": "word-110",
+      "text": "addiction,",
+      "start": 33.87,
+      "end": 34.25,
+      "confidence": 0.99
+    },
+    {
+      "id": "word-111",
+      "text": "and",
+      "start": 34.69,
+      "end": 35.29,
+      "confidence": 0.984
+    },
+    {
+      "id": "word-112",
+      "text": "I've",
+      "start": 35.29,
+      "end": 35.81,
+      "confidence": 0.972
+    },
+    {
+      "id": "word-113",
+      "text": "been",
+      "start": 35.81,
+      "end": 36.05,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-114",
+      "text": "able",
+      "start": 36.05,
+      "end": 36.41,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-115",
+      "text": "to",
+      "start": 36.41,
+      "end": 36.83,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-116",
+      "text": "cut",
+      "start": 36.83,
+      "end": 37.45,
+      "confidence": 0.984
+    },
+    {
+      "id": "word-117",
+      "text": "my",
+      "start": 37.45,
+      "end": 37.73,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-118",
+      "text": "screen",
+      "start": 37.73,
+      "end": 38.07,
+      "confidence": 0.987
+    },
+    {
+      "id": "word-119",
+      "text": "time",
+      "start": 38.07,
+      "end": 38.69,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-120",
+      "text": "ridiculously",
+      "start": 38.69,
+      "end": 39.85,
+      "confidence": 0.816
+    },
+    {
+      "id": "word-121",
+      "text": "lower",
+      "start": 39.85,
+      "end": 40.51,
+      "confidence": 0.969
+    },
+    {
+      "id": "word-122",
+      "text": "than",
+      "start": 40.51,
+      "end": 40.97,
+      "confidence": 0.988
+    },
+    {
+      "id": "word-123",
+      "text": "it",
+      "start": 40.97,
+      "end": 41.21,
+      "confidence": 0.989
+    },
+    {
+      "id": "word-124",
+      "text": "used",
+      "start": 41.21,
+      "end": 41.39,
+      "confidence": 0.995
+    },
+    {
+      "id": "word-125",
+      "text": "to",
+      "start": 41.39,
+      "end": 41.53,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-126",
+      "text": "be,",
+      "start": 41.53,
+      "end": 41.67,
+      "confidence": 0.992
+    },
+    {
+      "id": "word-127",
+      "text": "going",
+      "start": 41.73,
+      "end": 41.91,
+      "confidence": 0.98
+    },
+    {
+      "id": "word-128",
+      "text": "from",
+      "start": 41.91,
+      "end": 42.23,
+      "confidence": 0.991
+    },
+    {
+      "id": "word-129",
+      "text": "probably",
+      "start": 42.23,
+      "end": 42.55,
+      "confidence": 0.939
+    },
+    {
+      "id": "word-130",
+      "text": "four",
+      "start": 42.55,
+      "end": 42.79,
+      "confidence": 0.506
+    },
+    {
+      "id": "word-131",
+      "text": "to",
+      "start": 42.79,
+      "end": 42.89,
+      "confidence": 0.989
+    },
+    {
+      "id": "word-132",
+      "text": "five",
+      "start": 42.89,
+      "end": 43.07,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-133",
+      "text": "hours",
+      "start": 43.07,
+      "end": 43.35,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-134",
+      "text": "a",
+      "start": 43.35,
+      "end": 43.51,
+      "confidence": 0.993
+    },
+    {
+      "id": "word-135",
+      "text": "day",
+      "start": 43.51,
+      "end": 43.67,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-136",
+      "text": "to",
+      "start": 43.67,
+      "end": 43.91,
+      "confidence": 0.957
+    },
+    {
+      "id": "word-137",
+      "text": "about",
+      "start": 43.91,
+      "end": 44.19,
+      "confidence": 0.992
+    },
+    {
+      "id": "word-138",
+      "text": "one.",
+      "start": 44.19,
+      "end": 44.51,
+      "confidence": 0.988
+    },
+    {
+      "id": "word-139",
+      "text": "So",
+      "start": 44.93,
+      "end": 45.29,
+      "confidence": 0.581
+    },
+    {
+      "id": "word-140",
+      "text": "I've",
+      "start": 45.29,
+      "end": 45.43,
+      "confidence": 0.891
+    },
+    {
+      "id": "word-141",
+      "text": "been",
+      "start": 45.43,
+      "end": 45.53,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-142",
+      "text": "working",
+      "start": 45.53,
+      "end": 45.71,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-143",
+      "text": "on",
+      "start": 45.71,
+      "end": 45.95,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-144",
+      "text": "this",
+      "start": 45.95,
+      "end": 46.19,
+      "confidence": 0.95
+    },
+    {
+      "id": "word-145",
+      "text": "sort",
+      "start": 46.19,
+      "end": 46.33,
+      "confidence": 0.65
+    },
+    {
+      "id": "word-146",
+      "text": "of",
+      "start": 46.33,
+      "end": 46.43,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-147",
+      "text": "visual",
+      "start": 46.43,
+      "end": 46.85,
+      "confidence": 0.977
+    },
+    {
+      "id": "word-148",
+      "text": "novel",
+      "start": 46.85,
+      "end": 47.37,
+      "confidence": 0.843
+    },
+    {
+      "id": "word-149",
+      "text": "slash",
+      "start": 47.37,
+      "end": 47.79,
+      "confidence": 0.165
+    },
+    {
+      "id": "word-150",
+      "text": "interactive",
+      "start": 47.79,
+      "end": 48.51,
+      "confidence": 0.979
+    },
+    {
+      "id": "word-151",
+      "text": "essay",
+      "start": 48.51,
+      "end": 48.95,
+      "confidence": 0.904
+    },
+    {
+      "id": "word-152",
+      "text": "slash",
+      "start": 48.95,
+      "end": 49.31,
+      "confidence": 0.91
+    },
+    {
+      "id": "word-153",
+      "text": "research",
+      "start": 49.31,
+      "end": 49.81,
+      "confidence": 0.989
+    },
+    {
+      "id": "word-154",
+      "text": "paper,",
+      "start": 49.81,
+      "end": 50.21,
+      "confidence": 0.988
+    },
+    {
+      "id": "word-155",
+      "text": "whatever",
+      "start": 50.33,
+      "end": 50.51,
+      "confidence": 0.971
+    },
+    {
+      "id": "word-156",
+      "text": "you",
+      "start": 50.51,
+      "end": 50.71,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-157",
+      "text": "want",
+      "start": 50.71,
+      "end": 50.87,
+      "confidence": 0.903
+    },
+    {
+      "id": "word-158",
+      "text": "to",
+      "start": 50.87,
+      "end": 50.97,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-159",
+      "text": "call",
+      "start": 50.97,
+      "end": 51.15,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-160",
+      "text": "it.",
+      "start": 51.15,
+      "end": 51.31,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-161",
+      "text": "It's",
+      "start": 51.67,
+      "end": 52.03,
+      "confidence": 0.988
+    },
+    {
+      "id": "word-162",
+      "text": "called",
+      "start": 52.03,
+      "end": 52.21,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-163",
+      "text": "Get",
+      "start": 52.21,
+      "end": 52.45,
+      "confidence": 0.513
+    },
+    {
+      "id": "word-164",
+      "text": "the",
+      "start": 52.45,
+      "end": 52.59,
+      "confidence": 0.724
+    },
+    {
+      "id": "word-165",
+      "text": "Cat",
+      "start": 52.59,
+      "end": 52.75,
+      "confidence": 0.96
+    },
+    {
+      "id": "word-166",
+      "text": "a",
+      "start": 52.75,
+      "end": 52.89,
+      "confidence": 0.753
+    },
+    {
+      "id": "word-167",
+      "text": "Scratching",
+      "start": 52.89,
+      "end": 53.29,
+      "confidence": 0.93
+    },
+    {
+      "id": "word-168",
+      "text": "Post,",
+      "start": 53.29,
+      "end": 53.55,
+      "confidence": 0.692
+    },
+    {
+      "id": "word-169",
+      "text": "and",
+      "start": 53.91,
+      "end": 54.35,
+      "confidence": 0.991
+    },
+    {
+      "id": "word-170",
+      "text": "it",
+      "start": 54.35,
+      "end": 55.03,
+      "confidence": 0.82
+    },
+    {
+      "id": "word-171",
+      "text": "will",
+      "start": 55.03,
+      "end": 55.27,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-172",
+      "text": "be",
+      "start": 55.27,
+      "end": 55.47,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-173",
+      "text": "free",
+      "start": 55.47,
+      "end": 55.73,
+      "confidence": 0.987
+    },
+    {
+      "id": "word-174",
+      "text": "on",
+      "start": 55.73,
+      "end": 55.95,
+      "confidence": 0.992
+    },
+    {
+      "id": "word-175",
+      "text": "itch,",
+      "start": 55.95,
+      "end": 56.31,
+      "confidence": 0.899
+    },
+    {
+      "id": "word-176",
+      "text": "but",
+      "start": 56.37,
+      "end": 56.45,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-177",
+      "text": "for",
+      "start": 56.45,
+      "end": 56.63,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-178",
+      "text": "now",
+      "start": 56.63,
+      "end": 56.81,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-179",
+      "text": "if",
+      "start": 56.81,
+      "end": 56.95,
+      "confidence": 0.698
+    },
+    {
+      "id": "word-180",
+      "text": "you",
+      "start": 56.95,
+      "end": 57.03,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-181",
+      "text": "want",
+      "start": 57.03,
+      "end": 57.13,
+      "confidence": 0.93
+    },
+    {
+      "id": "word-182",
+      "text": "to",
+      "start": 57.13,
+      "end": 57.21,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-183",
+      "text": "check",
+      "start": 57.21,
+      "end": 57.37,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-184",
+      "text": "out",
+      "start": 57.37,
+      "end": 57.53,
+      "confidence": 0.99
+    },
+    {
+      "id": "word-185",
+      "text": "the",
+      "start": 57.53,
+      "end": 57.61,
+      "confidence": 0.905
+    },
+    {
+      "id": "word-186",
+      "text": "development,",
+      "start": 57.61,
+      "end": 58.03,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-187",
+      "text": "check",
+      "start": 58.21,
+      "end": 58.45,
+      "confidence": 0.994
+    },
+    {
+      "id": "word-188",
+      "text": "out",
+      "start": 58.45,
+      "end": 58.63,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-189",
+      "text": "my",
+      "start": 58.63,
+      "end": 58.81,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-190",
+      "text": "YouTube",
+      "start": 58.81,
+      "end": 59.01,
+      "confidence": 0.696
+    },
+    {
+      "id": "word-191",
+      "text": "channel.",
+      "start": 59.01,
+      "end": 59.33,
+      "confidence": 0.977
+    }
+  ]
+}

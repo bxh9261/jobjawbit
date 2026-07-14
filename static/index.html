@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Word Remixer</title>
+  <style>
+    :root {
+      font-family: Inter, system-ui, sans-serif;
+      color: #1c1c22;
+      background: #f4f4f8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+
+    h1 { margin-bottom: 4px; }
+    h2 { margin-top: 0; font-size: 1.1rem; }
+
+    .muted { color: #666673; }
+    .hidden { display: none !important; }
+
+    .panel {
+      background: white;
+      border: 1px solid #dcdce5;
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 18px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.04);
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    button, .file-label {
+      border: 0;
+      border-radius: 9px;
+      background: #292933;
+      color: white;
+      padding: 10px 14px;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    button.secondary {
+      background: #e8e8ef;
+      color: #292933;
+    }
+
+    button:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+
+    input[type=file] { max-width: 100%; }
+
+    .workspace {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .word-bank, .sentence {
+      min-height: 210px;
+      border: 2px dashed #c9c9d5;
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      gap: 8px;
+    }
+
+    .sentence {
+      background: #fafaff;
+    }
+
+    .word {
+      display: inline-flex;
+      gap: 5px;
+      align-items: center;
+      padding: 7px 9px;
+      border-radius: 8px;
+      background: #ececf4;
+      border: 1px solid #d5d5e2;
+      cursor: grab;
+      user-select: none;
+    }
+
+    .word:active { cursor: grabbing; }
+
+    .word button {
+      padding: 1px 5px;
+      border-radius: 5px;
+      background: transparent;
+      color: #3a3a46;
+    }
+
+    video {
+      width: 100%;
+      max-height: 430px;
+      background: black;
+      border-radius: 10px;
+    }
+
+    .status {
+      min-height: 24px;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .error { color: #a40020; }
+
+    @media (max-width: 760px) {
+      .workspace { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Video Word Remixer</h1>
+  <div class="muted">Create an intentionally awkward sentence from clips of individual spoken words.</div>
+
+  <section class="panel">
+    <h2>1. Upload and transcribe</h2>
+    <div class="toolbar">
+      <input id="fileInput" type="file" accept="video/*">
+      <button id="uploadButton">Upload video</button>
+    </div>
+    <div id="uploadStatus" class="status"></div>
+  </section>
+
+  <section id="editorPanel" class="panel hidden">
+    <h2>2. Build the sentence</h2>
+    <p class="muted">
+      Drag words from the transcript into the sentence. Click ▶ to preview a word.
+      Repeated words remain separate clips.
+    </p>
+
+    <div class="workspace">
+      <div>
+        <strong>Transcript</strong>
+        <div id="wordBank" class="word-bank" data-zone="bank"></div>
+      </div>
+      <div>
+        <strong>New sentence</strong>
+        <div id="sentence" class="sentence" data-zone="sentence"></div>
+      </div>
+    </div>
+
+    <div class="toolbar" style="margin-top: 14px">
+      <button id="clearButton" class="secondary">Clear sentence</button>
+      <button id="exportButton">Export MP4</button>
+    </div>
+    <div id="exportStatus" class="status"></div>
+  </section>
+
+  <section id="videoPanel" class="panel hidden">
+    <h2>Preview</h2>
+    <video id="videoPlayer" controls playsinline></video>
+    <div id="downloadArea" class="toolbar" style="margin-top: 12px"></div>
+  </section>
+
+<script>
+  const state = {
+    projectId: null,
+    words: [],
+    sentence: [],
+    draggedWord: null,
+    draggedFrom: null
+  };
+
+  const fileInput = document.querySelector("#fileInput");
+  const uploadButton = document.querySelector("#uploadButton");
+  const uploadStatus = document.querySelector("#uploadStatus");
+  const editorPanel = document.querySelector("#editorPanel");
+  const videoPanel = document.querySelector("#videoPanel");
+  const wordBank = document.querySelector("#wordBank");
+  const sentence = document.querySelector("#sentence");
+  const exportButton = document.querySelector("#exportButton");
+  const clearButton = document.querySelector("#clearButton");
+  const exportStatus = document.querySelector("#exportStatus");
+  const videoPlayer = document.querySelector("#videoPlayer");
+  const downloadArea = document.querySelector("#downloadArea");
+
+  uploadButton.addEventListener("click", upload);
+  exportButton.addEventListener("click", exportRemix);
+  clearButton.addEventListener("click", () => {
+    state.sentence = [];
+    render();
+  });
+
+  for (const zone of [wordBank, sentence]) {
+    zone.addEventListener("dragover", event => event.preventDefault());
+    zone.addEventListener("drop", event => {
+      event.preventDefault();
+      if (!state.draggedWord) return;
+
+      if (zone.dataset.zone === "sentence") {
+        // Clone from transcript, but move when reordering inside the sentence.
+        if (state.draggedFrom === "sentence") {
+          state.sentence = state.sentence.filter(item => item.instanceId !== state.draggedWord.instanceId);
+        }
+
+        state.sentence.push({
+          ...state.draggedWord,
+          instanceId: crypto.randomUUID()
+        });
+      }
+
+      render();
+      state.draggedWord = null;
+      state.draggedFrom = null;
+    });
+  }
+
+  async function upload() {
+    const file = fileInput.files[0];
+    if (!file) {
+      setStatus(uploadStatus, "Choose a video first.", true);
+      return;
+    }
+
+    uploadButton.disabled = true;
+    setStatus(uploadStatus, "Uploading and transcribing… The first run also downloads the model.");
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+      const response = await fetch("/api/upload", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.detail || "Upload failed.");
+
+      state.projectId = data.project_id;
+      state.words = data.words;
+      state.sentence = [];
+
+      editorPanel.classList.remove("hidden");
+      videoPanel.classList.remove("hidden");
+      videoPlayer.src = `/api/projects/${state.projectId}/source`;
+      downloadArea.innerHTML = "";
+      render();
+
+      setStatus(
+        uploadStatus,
+        `Found ${data.words.length} words. Detected language: ${data.language}.`
+      );
+    } catch (error) {
+      setStatus(uploadStatus, error.message, true);
+    } finally {
+      uploadButton.disabled = false;
+    }
+  }
+
+  function makeWordElement(word, source) {
+    const element = document.createElement("div");
+    element.className = "word";
+    element.draggable = true;
+    element.title = `${word.start.toFixed(2)}s–${word.end.toFixed(2)}s`;
+
+    const label = document.createElement("span");
+    label.textContent = word.text;
+
+    const preview = document.createElement("button");
+    preview.type = "button";
+    preview.textContent = "▶";
+    preview.title = "Preview this word";
+    preview.addEventListener("click", event => {
+      event.stopPropagation();
+      videoPanel.classList.remove("hidden");
+      videoPlayer.src = `/api/projects/${state.projectId}/word/${word.id}`;
+      videoPlayer.play();
+    });
+
+    element.append(label, preview);
+
+    if (source === "sentence") {
+      const remove = document.createElement("button");
+      remove.type = "button";
+      remove.textContent = "×";
+      remove.title = "Remove";
+      remove.addEventListener("click", event => {
+        event.stopPropagation();
+        state.sentence = state.sentence.filter(
+          item => item.instanceId !== word.instanceId
+        );
+        render();
+      });
+      element.append(remove);
+    }
+
+    element.addEventListener("dragstart", () => {
+      state.draggedWord = word;
+      state.draggedFrom = source;
+    });
+
+    return element;
+  }
+
+  function render() {
+    wordBank.innerHTML = "";
+    sentence.innerHTML = "";
+
+    for (const word of state.words) {
+      wordBank.append(makeWordElement(word, "bank"));
+    }
+
+    for (const word of state.sentence) {
+      sentence.append(makeWordElement(word, "sentence"));
+    }
+  }
+
+  async function exportRemix() {
+    if (!state.sentence.length) {
+      setStatus(exportStatus, "Add at least one word.", true);
+      return;
+    }
+
+    exportButton.disabled = true;
+    setStatus(exportStatus, "Rendering the remix…");
+    downloadArea.innerHTML = "";
+
+    try {
+      const response = await fetch("/api/export", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          project_id: state.projectId,
+          words: state.sentence.map(({id, text, start, end}) => ({
+            id, text, start, end
+          }))
+        })
+      });
+
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.detail || "Export failed.");
+
+      videoPlayer.src = `${data.preview_url}?t=${Date.now()}`;
+      videoPanel.classList.remove("hidden");
+
+      const link = document.createElement("a");
+      link.href = data.download_url;
+      link.textContent = "Download MP4";
+      link.className = "file-label";
+      downloadArea.append(link);
+
+      setStatus(exportStatus, "Export complete.");
+    } catch (error) {
+      setStatus(exportStatus, error.message, true);
+    } finally {
+      exportButton.disabled = false;
+    }
+  }
+
+  function setStatus(element, message, isError = false) {
+    element.textContent = message;
+    element.classList.toggle("error", isError);
+  }
+</script>
+</body>
+</html>

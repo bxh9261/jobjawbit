@@ -1,0 +1,372 @@
+{
+  "project_id": "6830f850c1d04153ac4dae1407e72f09",
+  "source_filename": "source.mov",
+  "language": "en",
+  "language_probability": 0.8685659170150757,
+  "words": [
+    {
+      "id": "word-0",
+      "text": "Oh,",
+      "start": 7.38,
+      "end": 8.34,
+      "confidence": 0.037
+    },
+    {
+      "id": "word-1",
+      "text": "Canada,",
+      "start": 10.53,
+      "end": 10.53,
+      "confidence": 0.214
+    },
+    {
+      "id": "word-2",
+      "text": "our",
+      "start": 12.03,
+      "end": 12.73,
+      "confidence": 0.93
+    },
+    {
+      "id": "word-3",
+      "text": "home",
+      "start": 12.73,
+      "end": 13.53,
+      "confidence": 0.961
+    },
+    {
+      "id": "word-4",
+      "text": "and",
+      "start": 13.53,
+      "end": 14.01,
+      "confidence": 0.968
+    },
+    {
+      "id": "word-5",
+      "text": "native",
+      "start": 14.01,
+      "end": 14.95,
+      "confidence": 0.98
+    },
+    {
+      "id": "word-6",
+      "text": "land,",
+      "start": 14.95,
+      "end": 16.79,
+      "confidence": 0.991
+    },
+    {
+      "id": "word-7",
+      "text": "true",
+      "start": 17.45,
+      "end": 18.15,
+      "confidence": 0.814
+    },
+    {
+      "id": "word-8",
+      "text": "patriot",
+      "start": 18.15,
+      "end": 19.65,
+      "confidence": 0.978
+    },
+    {
+      "id": "word-9",
+      "text": "love",
+      "start": 19.65,
+      "end": 20.77,
+      "confidence": 0.992
+    },
+    {
+      "id": "word-10",
+      "text": "in",
+      "start": 20.77,
+      "end": 22.39,
+      "confidence": 0.792
+    },
+    {
+      "id": "word-11",
+      "text": "all",
+      "start": 22.39,
+      "end": 23.01,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-12",
+      "text": "of",
+      "start": 23.01,
+      "end": 23.67,
+      "confidence": 0.998
+    },
+    {
+      "id": "word-13",
+      "text": "us",
+      "start": 23.67,
+      "end": 24.15,
+      "confidence": 0.981
+    },
+    {
+      "id": "word-14",
+      "text": "command.",
+      "start": 24.15,
+      "end": 25.13,
+      "confidence": 0.968
+    },
+    {
+      "id": "word-15",
+      "text": "God",
+      "start": 47.17,
+      "end": 48.57,
+      "confidence": 0.133
+    },
+    {
+      "id": "word-16",
+      "text": "keep",
+      "start": 48.57,
+      "end": 49.59,
+      "confidence": 0.678
+    },
+    {
+      "id": "word-17",
+      "text": "our",
+      "start": 49.59,
+      "end": 50.45,
+      "confidence": 0.974
+    },
+    {
+      "id": "word-18",
+      "text": "land,",
+      "start": 50.45,
+      "end": 52.19,
+      "confidence": 0.938
+    },
+    {
+      "id": "word-19",
+      "text": "God",
+      "start": 52.33,
+      "end": 53.03,
+      "confidence": 0.003
+    },
+    {
+      "id": "word-20",
+      "text": "keep",
+      "start": 53.03,
+      "end": 53.89,
+      "confidence": 0.981
+    },
+    {
+      "id": "word-21",
+      "text": "our",
+      "start": 53.89,
+      "end": 53.89,
+      "confidence": 0.985
+    },
+    {
+      "id": "word-22",
+      "text": "land,",
+      "start": 53.89,
+      "end": 53.95,
+      "confidence": 0.878
+    },
+    {
+      "id": "word-23",
+      "text": "glorious",
+      "start": 53.97,
+      "end": 53.97,
+      "confidence": 0.442
+    },
+    {
+      "id": "word-24",
+      "text": "and",
+      "start": 53.97,
+      "end": 54.93,
+      "confidence": 0.967
+    },
+    {
+      "id": "word-25",
+      "text": "free.",
+      "start": 54.93,
+      "end": 55.11,
+      "confidence": 0.552
+    },
+    {
+      "id": "word-26",
+      "text": "Oh,",
+      "start": 55.11,
+      "end": 57.63,
+      "confidence": 0.093
+    },
+    {
+      "id": "word-27",
+      "text": "Canada,",
+      "start": 59.33,
+      "end": 59.35,
+      "confidence": 0.929
+    },
+    {
+      "id": "word-28",
+      "text": "we",
+      "start": 60.07,
+      "end": 60.41,
+      "confidence": 0.958
+    },
+    {
+      "id": "word-29",
+      "text": "stand",
+      "start": 60.41,
+      "end": 60.95,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-30",
+      "text": "on",
+      "start": 60.95,
+      "end": 61.81,
+      "confidence": 0.968
+    },
+    {
+      "id": "word-31",
+      "text": "guard",
+      "start": 61.81,
+      "end": 62.75,
+      "confidence": 0.988
+    },
+    {
+      "id": "word-32",
+      "text": "for",
+      "start": 62.75,
+      "end": 63.63,
+      "confidence": 0.94
+    },
+    {
+      "id": "word-33",
+      "text": "thee.",
+      "start": 63.63,
+      "end": 65.17,
+      "confidence": 0.953
+    },
+    {
+      "id": "word-34",
+      "text": "Oh,",
+      "start": 66.35,
+      "end": 67.45,
+      "confidence": 0.872
+    },
+    {
+      "id": "word-35",
+      "text": "Canada,",
+      "start": 68.09,
+      "end": 69.13,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-36",
+      "text": "we",
+      "start": 69.83,
+      "end": 70.23,
+      "confidence": 0.996
+    },
+    {
+      "id": "word-37",
+      "text": "stand",
+      "start": 70.23,
+      "end": 70.73,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-38",
+      "text": "on",
+      "start": 70.73,
+      "end": 71.67,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-39",
+      "text": "guard",
+      "start": 71.67,
+      "end": 72.63,
+      "confidence": 0.997
+    },
+    {
+      "id": "word-40",
+      "text": "for",
+      "start": 72.63,
+      "end": 73.85,
+      "confidence": 0.986
+    },
+    {
+      "id": "word-41",
+      "text": "thee.",
+      "start": 73.85,
+      "end": 75.15,
+      "confidence": 0.999
+    },
+    {
+      "id": "word-42",
+      "text": "That",
+      "start": 75.15,
+      "end": 76.15,
+      "confidence": 0.575
+    },
+    {
+      "id": "word-43",
+      "text": "was",
+      "start": 78.36,
+      "end": 78.6,
+      "confidence": 0.99
+    },
+    {
+      "id": "word-44",
+      "text": "B.",
+      "start": 78.6,
+      "end": 79.0,
+      "confidence": 0.331
+    },
+    {
+      "id": "word-45",
+      "text": "Hanell",
+      "start": 79.16,
+      "end": 79.58,
+      "confidence": 0.608
+    },
+    {
+      "id": "word-46",
+      "text": "with",
+      "start": 79.58,
+      "end": 79.82,
+      "confidence": 0.945
+    },
+    {
+      "id": "word-47",
+      "text": "the",
+      "start": 79.82,
+      "end": 79.94,
+      "confidence": 0.985
+    },
+    {
+      "id": "word-48",
+      "text": "performance",
+      "start": 79.94,
+      "end": 80.44,
+      "confidence": 0.962
+    },
+    {
+      "id": "word-49",
+      "text": "of",
+      "start": 80.44,
+      "end": 80.92,
+      "confidence": 0.995
+    },
+    {
+      "id": "word-50",
+      "text": "Oh,",
+      "start": 80.92,
+      "end": 81.12,
+      "confidence": 0.091
+    },
+    {
+      "id": "word-51",
+      "text": "Canada.",
+      "start": 81.24,
+      "end": 81.54,
+      "confidence": 0.983
+    }
+  ]
+}
